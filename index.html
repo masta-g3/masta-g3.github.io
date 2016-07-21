@@ -1,79 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Basic Page Needs -->
-  <meta charset="utf-8">
-  <title>Projects by Manuel Rueda</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <!-- Mobile Specific Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Proejcts of all sorts" content="">
+    <meta name="Manuel Rueda" content="">
 
-  <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <title>Manuel Rueda's Personal Site</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+    <!--BootstrapCSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- JavaScript -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jGravity.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.popup.css" type="text/css">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <!-- PopUp Functionallity -->
+    <script type="text/javascript">
+      $(function() {
+        $(".js__p_start").simplePopup();
+      });
+    </script>
+    <script type="text/javascript" src="js/jquery.popup.js"></script>
 
 </head>
 
-<!--script>
-    $(document).ready(function() {
-         $('div.jGravity').live('click', function() {
-              $('body').jGravity({
-                   target: 'everything',
-                   weight: 50,
-                   depth: 1,
-                   drag: false
-            });
-        });
-    });
-</script-->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Logo -->
+  <div id="logo"><p>mg3</p></div>
 
-<body>
-  <!-- Primary Page Layout -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h3>Welcome</h3>
-        <p>Hi, I am Manuel Rueda, a Data Scientist studying at Columbia University. My main interests are around machine learning, data visualization, and social data. This is my repository for projects, visualizations, and eventually generative stuff made with Processing. You can reach me at <a href="manuel.rueda@columbia.edu"> mr3523@columbia.edu</a>.</p>
-      </div>
-      <div class="one-half column" style="margin-top: 20%;">
-        <h5>Data Science Projects</h5>
-        <ul>
-          <li>Geospatial Analysis of Gentrification on NYC</li>
-          <ul>
-            <li><a href="https://masta-g3.github.io/nycGentrification">Interactive Report<a></li>
-            <li><a href="https://github.com/masta-g3/nycGentrification/blob/master/GentrificationReport.pdf">Written Report</a></li>
-          </ul>
-          <li>Predicting and Exploring IMDB's Ratings</li>
-          <ul>
-            <li><a href="https://github.com/masta-g3/movie-analysis/blob/master/movie-analysis.pdf">Written Report</a></li>
-          </ul>
-          <li>CULPA Sentiment</li>
-          <ul>
-            <li><a href="http://woojink.github.io/culpa_sentiment/">Interactive Website</a></li>
-          </ul>
-          </li>
-          <li>MoMA Through Time</li>
-          <ul>
-            <li><a href="http://www.woojink.com/moma/">Interactive Website</a></li>
-          </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-<!-- End Document -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#intro">Manuel Rueda</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#ds">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#apps">Data Apps</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#p5">D3 & P5 JS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#me">More About Me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Thing for full screen overlay -->
+    <div class="p_body js__p_body js__fadeout"></div>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-offset-2">
+                    <h1>Manuel Rueda</h1>
+                    </br>
+                    <p>Hi, I'm <strong>Data Scientist</strong> living in <strong>NY</strong> and studying at <strong>Columbia University</strong>. I love building data-apps and interactive visualizations, scraping the web, and doing fun stuff with machine learning or neural networks. In this repository I store several of the projects I've worked on, you can explore them with the tabs above. If you would like to colaborate or need help with any data-science related project, please reach me at <a href="manuel.rueda@columbia.edu"> manuel.rueda@columbia.edu</a>.</p>
+                  </br>
+                    <a class="btn btn-default page-scroll" href="#ds">Check my Projects</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="ds" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Data Science Projects</h1>
+                    </br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h4> <a href="https://masta-g3.github.io/nycGentrification/"> Geospatial Analysis of Gentrification on NYC </a> </h4>
+                        <p> A geo-spatial analysis of social and economical variables that have been linked to the process of gentrification in the literature. New York is used as taste case. Done as final project for <i>GIS Spatial Analysis</i> using QGIS, R, d3 and CartoDb. Written report located <a href="https://github.com/masta-g3/nycGentrification/blob/master/GentrificationReport.pdf"> here. </a></p>
+                      </div>
+                      <div class="col-md-6">
+                        <h4> <a href="https://masta-g3.shinyapps.io/pets/"> Unusual Pets in NYC </a> </h4>
+                        <p> Winner of <i>MoMA's Art Datathon</i> event. We utilized the museum's collection data to explore the most exhibited artists and genres through time, revealing interesting patterns on their selection.</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h4> <a href="http://www.woojink.com/moma/"> MoMA Through Time </a> </h4>
+                        <p> Winner of <i>MoMA's Art Datathon</i> event. We utilized the museum's collection data to explore the most exhibited artists and genres through time, revealing interesting patterns on their selection.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Apps Section -->
+    <section id="apps" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Data Apps</h1>
+                    <br>
+                    <!-- Projects Row -->
+                    <div class="row">
+                        <div class="col-md-4 portfolio-item">
+                            <a href="#" class="js__p_start">
+                                <img class="img-responsive" src="img/app1.gif" alt="";>
+                            </a>
+                            <h4>
+                              <a href="#" class="js__p_start">GeoTracking App</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </div>
+                        <div class="col-md-4 portfolio-item">
+                            <a href="#">
+                                <!--img class="img-responsive" src="http://placehold.it/395x213" alt=""-->
+                            </a>
+                            <h4>
+                                <a href="#">Project Name</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </div>
+                        <div class="col-md-4 portfolio-item">
+                            <a href="#">
+                                <!--img class="img-responsive" src="http://placehold.it/395x213" alt=""-->
+                            </a>
+                            <h4>
+                                <a href="#">Project Name</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Boxes -->
+        <div class="popup js__popup js__slide_top">
+          <a href="#" class="p_close js__p_close" title="Close"> <span></span><span></span> </a>
+          <div class="p_content">
+            </h4> GeoTracking App </h4>
+          </div>
+        </div>
+
+    </section>
+
+      <!-- Visualization Section -->
+    <section id="p5" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>P5 & D3 JS</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Apps Section -->
+    <section id="me" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>More About Me</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Me</h1>
+                    </br>
+                    <p class="override"> Asides from e-mail, you can contact me on the following networks.</p>
+                    </br>
+                    <p class="override"><a href="manuel.rueda@columbia.edu"> <i class="fa fa-envelope-square fa-5x"> </i> </a>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                      <a href="https://www.linkedin.com/in/manuelrueda87"> <i class="fa fa-linkedin-square fa-5x"> </i> </a>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                      <a href="https://github.com/masta-g3"> <i class="fa fa-github-square fa-5x"></i> </a>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                      <a href="https://www.instagram.com/masta_g3"> <i class="fa fa-instagram fa-5x"></i> </a>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                      <a href="https://twitter.com/masta_g3"> <i class="fa fa-twitter-square fa-5x"> </i> </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
