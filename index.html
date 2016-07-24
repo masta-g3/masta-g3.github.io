@@ -33,12 +33,12 @@
     <script src="js/scrolling-nav.js"></script>
 
     <!-- PopUp Functionallity -->
-    <script type="text/javascript">
+    <!--script type="text/javascript">
       $(function() {
         $(".js__p_start").simplePopup();
       });
     </script>
-    <script type="text/javascript" src="js/jquery.popup.js"></script>
+    <script type="text/javascript" src="js/jquery.popup.js"></script-->
 
 </head>
 
@@ -95,10 +95,10 @@
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2">
                     <h1>Manuel Rueda</h1>
                     </br>
-                    <p>Hi, I'm <strong>Data Scientist</strong> living in <strong>NY</strong> and studying at <strong>Columbia University</strong>. I love building data-apps and interactive visualizations, scraping the web, and doing fun stuff with machine learning or neural networks. In this repository I store several of the projects I've worked on, you can explore them with the tabs above. If you would like to colaborate or need help with any data-science related project, please reach me at <a href="manuel.rueda@columbia.edu"> manuel.rueda@columbia.edu</a>.</p>
+                    <p>Hi, I'm <strong>Data Scientist</strong> and <strong>Economist</strong> living in <strong>NY</strong>, studying at <strong>Columbia University</strong>. I love building data-apps and interactive visualizations, scraping the web, and doing fun stuff with machine learning or neural networks. In this repository I store several of the projects I've worked on, you can explore them with the tabs above. If you would like to colaborate or need help with any data-science related project, please reach me at <a href="manuel.rueda@columbia.edu"> manuel.rueda@columbia.edu</a>.</p>
                   </br>
                     <a class="btn btn-default page-scroll" href="#ds">Check my Projects</a>
                 </div>
@@ -120,14 +120,14 @@
                         <p> A geo-spatial analysis of social and economical variables that have been linked to the process of gentrification in the literature. New York is used as taste case. Done as final project for <i>GIS Spatial Analysis</i> using QGIS, R, d3 and CartoDb. Written report located <a href="https://github.com/masta-g3/nycGentrification/blob/master/GentrificationReport.pdf"> here. </a></p>
                       </div>
                       <div class="col-md-6">
-                        <h4> <a href="https://masta-g3.shinyapps.io/pets/"> Unusual Pets in NYC </a> </h4>
+                        <h4> <a href="http://www.woojink.com/moma/"> MoMA Through Time </a> </h4>
                         <p> Winner of <i>MoMA's Art Datathon</i> event. We utilized the museum's collection data to explore the most exhibited artists and genres through time, revealing interesting patterns on their selection.</p>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-6">
-                        <h4> <a href="http://www.woojink.com/moma/"> MoMA Through Time </a> </h4>
-                        <p> Winner of <i>MoMA's Art Datathon</i> event. We utilized the museum's collection data to explore the most exhibited artists and genres through time, revealing interesting patterns on their selection.</p>
+                        <h4> <a href="https://masta-g3.shinyapps.io/pets/"> Unusual Pets in NYC </a> </h4>
+                        <p> Part of a larger project analyzing NYC's 311 reports data. This map shows exotic animal related complaints and the place where they occured.</p>
                       </div>
                     </div>
                 </div>
@@ -145,31 +145,22 @@
                     <!-- Projects Row -->
                     <div class="row">
                         <div class="col-md-4 portfolio-item">
-                            <a href="#" class="js__p_start">
-                                <img class="img-responsive" src="img/app1.gif" alt="";>
-                            </a>
-                            <h4>
-                              <a href="#" class="js__p_start">GeoTracking App</a>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                          <img class="img-responsive box" src="img/combined1.gif" alt=""/>
+                          </br>
+                          <h4>GeoTracking App</h4>
+                          <p>Built for <a href='www.trinnaclefund.com'>Trinnacle Capital Management</a>. Uses mobile geolocation data to fit a linear model based on user parameters and predict companies' revenue. </p>
                         </div>
                         <div class="col-md-4 portfolio-item">
-                            <a href="#">
-                                <!--img class="img-responsive" src="http://placehold.it/395x213" alt=""-->
-                            </a>
-                            <h4>
-                                <a href="#">Project Name</a>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                          <img class="img-responsive box" src="http://placehold.it/500x279.png" alt=""/>
+                          </br>
+                          <h4>Process Monitor</h4>
+                          <p>Built for <a href='www.koracap.com/'>Kora Management LP </a>. Monitors the status of several web-scraping processes and provides drill-down details on them.</p>
                         </div>
                         <div class="col-md-4 portfolio-item">
-                            <a href="#">
-                                <!--img class="img-responsive" src="http://placehold.it/395x213" alt=""-->
-                            </a>
-                            <h4>
-                                <a href="#">Project Name</a>
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                          <img class="img-responsive box" src="http://placehold.it/500x279.png" alt=""/>
+                          </br>
+                          <h4>Twitter Brand Monitor</h4>
+                          <p>Collects tweets related to a company and its products,  performs sentiment analysis on it, and extracts user-ratings for them. The data is presented as time-series with drill-down options. </p>
                         </div>
                     </div>
                     <!-- /.row -->
@@ -178,12 +169,22 @@
         </div>
 
         <!-- Modal Boxes -->
-        <div class="popup js__popup js__slide_top">
-          <a href="#" class="p_close js__p_close" title="Close"> <span></span><span></span> </a>
-          <div class="p_content">
-            </h4> GeoTracking App </h4>
+        <!--div class="popup js__popup js__slide_top">
+          <div class="row">
+            </br>
+            <a href="#" class="p_close js__p_close" title="Close"> <i class="fa fa-times fa-2x"></i> </a>
+            <div class="col-md-8 col-md-offset-2">
+              <h4> GeoTracking App </h4>
+              </br>
+              <img class="img-responsive" src="img/combined1.gif" alt="";>
+              <ul>
+                <li>asas</li>
+                <li>asas</li>
+                <li>asas</li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </div-->
 
     </section>
 

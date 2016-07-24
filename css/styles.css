@@ -12,7 +12,14 @@ p {
   text-align: justify;
 }
 
-.img-responsive{margin: 0 auto}
+.img-responsive{
+  margin: 0 auto;
+  display: 100%;
+}
+
+.box{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* Tablets */
 @media(max-width:922px) {
@@ -66,14 +73,9 @@ text-align: center;
 	z-index: -1;
 }
 
-.img-responsive {
-  display: 100%;
-  border: 2px solid #EDEEF3;
-  }
-
 #logo {
   font-size: 1.3em;
-  color: #fcf8e3;
+  color: #e1ddcb;
   position: fixed;
   position:fixed;
   right:1em;
