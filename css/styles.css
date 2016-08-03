@@ -34,6 +34,7 @@ p {
     h1 {font-size: 2em;}
     h3 {font-size: 1.3em;}
     h4 {font-size: 1.4em;}
+    .soon{font-size: 5em;}
     .img-responsive {display: none;}
 }
 
@@ -43,6 +44,7 @@ p {
     h1 {font-size: 1.7em;}
     h3 {font-size: 1.1em;}
     h4 {font-size: 1.2em;}
+    .soon{font-size: 3em;}
     .img-responsive {display: none;}
 }
 
