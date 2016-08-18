@@ -34,7 +34,7 @@ p {
     h1 {font-size: 2em;}
     h3 {font-size: 1.3em;}
     h4 {font-size: 1.4em;}
-    .tab-links a{font-size: 10  px;}
+    .tab-links {font-size: 1em;}
     .soon{font-size: 5em;}
     .img-responsive {display: none;}
 }
@@ -47,7 +47,7 @@ p {
     h4 {font-size: 1.2em;}
     .soon{font-size: 3em;}
     .img-responsive {display: none;}
-    .tab-links {font-size:12px;}
+    .tab-links {font-size:1em; padding:5px;}
 }
 
 .override {
@@ -100,58 +100,58 @@ text-align: center;
     display:inline-block;
 }
 
-    /*----- Tab Links -----*/
-    /* Clearfix */
-    .tab-links:after {
-        display:block;
-        clear:both;
-        content:'';
-    }
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
 
-    .tab-links li {
-        margin:0px 5px 0px 0px;
-        float:left;
-        list-style:none;
-    }
+.tab-links li {
+    margin:0px 5px 0px 0px;
+    float:left;
+    list-style:none;
+}
 
-        .tab-links a {
-            padding:9px;
-            display:inline-block;
-            border-radius:3px 3px 0px 0px;
-            background:#eee;
-            font-size:16px;
-            font-weight:600;
-            color:#4c4c4c;
-            transition:all linear 0.15s;
-        }
+.tab-links a {
+    padding:9px;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    background:#eee;
+    font-size:1em;
+    font-weight:600;
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+}
 
-        .tab-links a:hover {
-            background:#E7E7E7;
-            text-decoration:none;
-            color:#428bca;
-        }
+.tab-links a:hover {
+    background:#E7E7E7;
+    text-decoration:none;
+    color:#428bca;
+}
 
-    li.active a, li.active a:hover {
-        background:#a7cce5;
-        color:#4c4c4c;
-        text-decoration: none;
-    }
+li.active a, li.active a:hover {
+    background:#a7cce5;
+    color:#4c4c4c;
+    text-decoration: none;
+}
 
-    /*----- Content of Tabs -----*/
-    .tab-content {
-        padding:15px;
-        border-radius:3px;
-        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-        background:#eee;
-    }
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding:15px;
+    border-radius:3px;
+    box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+    background:#eee;
+}
 
-        .tab {
-            display:none;
-        }
+.tab {
+    display:none;
+}
 
-        .tab.active {
-            display:block;
-        }
+.tab.active {
+    display:block;
+}
 
 /*----- Progress Bar -----*/
 #bar {
