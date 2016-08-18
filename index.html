@@ -12,7 +12,7 @@
     <title>Manuel Rueda's Personal Site</title>
 
     <!--BootstrapCSS-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!--CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -26,11 +26,12 @@
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script src="js/tabs.js"></script>
 
     <!-- PopUp Functionallity -->
     <!--script type="text/javascript">
@@ -98,7 +99,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h1>Manuel Rueda</h1>
                     </br>
-                    <p>Hi, I'm <strong>Data Scientist</strong> and <strong>Economist</strong> living in <strong>NY</strong> and studying at <strong>Columbia University</strong>. I work doing analytical data apps, interactive visualizations and dashboards, and experimental projects using machine and deep learning. If you would like to connect, colaborate or need help with any data-science related project, please reach me at <a href="manuel.rueda@columbia.edu"> manuel.rueda@columbia.edu</a>.</p>
+                    <p>Hi, I'm <strong>Data Scientist</strong> and <strong>Economist</strong> living in <strong>NY</strong> and studying at <strong>Columbia University</strong>. I work mostly doing web scraping, machine / deep learning models, and building analytical data apps. On this site I host a sample of them. If you would like to connect, colaborate or need help with any data-science related project, please reach me at <a href="manuel.rueda@columbia.edu"> manuel.rueda@columbia.edu</a>.</p>
                   </br>
                     <a class="btn btn-default page-scroll" href="#ds">Check my Projects</a>
                 </div>
@@ -127,8 +128,8 @@
                   </br>
                     <div class="row">
                       <div class="col-md-6">
-                        <h4> <a href='https://github.com/masta-g3/summer_networks'> Summer (Neural) Networks </a> </h4>
-                        <p> Several small projects and tutorials performed during the summer on Neural Networks their creative applications. Implementation both on numpy and theano, and the input corpus is a set of <a href='https://en.wikipedia.org/wiki/Charles_Bukowski'>Bukowski</a>'s poems.</p>
+                        <h4> <a href='https://github.com/masta-g3/summer_networks'> Summer (Neural) Networks '16</a> </h4>
+                        <p> Several small projects and tutorials performed during the summer on Neural Networks and their creative applications. Implementation both on numpy and theano, with the input corpus a set of <a href='https://en.wikipedia.org/wiki/Charles_Bukowski'>Bukowski</a>'s poems.</p>
                       </div>
                     <div class="col-md-6">
                       <h4> <a href="http://woojink.github.io/culpa_sentiment/"> CULPA Sentiment </a> </h4>
@@ -145,6 +146,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    </br>
+                    </br>
+                    </br>
+                    </br>
                     <h1>Data Apps</h1>
                     <br>
                     <!-- Projects Row -->
@@ -156,10 +161,10 @@
                           <p>Built for <a href='http://www.trinnaclefund.com'>Trinnacle Capital Management</a>. Uses mobile geolocation data to fit a linear model based on user parameters and predict companies' revenue. </p>
                         </div>
                         <div class="col-md-4 portfolio-item">
-                          <img class="img-responsive box" src="http://placehold.it/500x279.png" alt=""/>
+                          <img class="img-responsive box" src="img/combined2.gif" alt=""/>
                           </br>
                           <h4>Process Monitor</h4>
-                          <p>Built for <a href='http://www.koracap.com/'>Kora Management LP </a>. Monitors the status of several web-scraping processes and provides drill-down details on them.</p>
+                          <p>Built for <a href='http://www.koracap.com/'>Kora Management LP</a>. Monitors the status of several web-scraping processes running on AWS and provides drill-down details on them (running time, success rate, items collected).</p>
                         </div>
                         <div class="col-md-4 portfolio-item">
                           <img class="img-responsive box" src="http://placehold.it/500x279.png" alt=""/>
@@ -201,6 +206,11 @@
                     <h1>P5 & D3 JS</h1>
                     </br>
                     <p class='soon'>COMING SOON</p>
+                    <ul class="nav nav-tabs">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li><a href="#">Profile</a></li>
+                      <li><a href="#">Messages</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -210,11 +220,47 @@
     <section id="me" class="services-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>More About Me</h1>
-                    </br>
-                    <p class='soon'>COMING SOON</p>
-                </div>
+              <h1>More About Me</h1>
+              <div class="col-lg-5">
+                <h4> Short Bio </h4>
+                <p> I graduated as a B.Sc. in Economics from Monterrey Tech (ITESM) and worked at MSCI as a quantitative data analyst for 5 years, where I helped build and manage the Market Data team. After flirting with R, Python and big data visualization tools, I decided to purse graduate studies on the subject. Right now I'm going over the third (and last) semester of the M.S. in Data Science Program at Columbia, and have developed practical experience during my 2 internships projects here in NY: the first at Trinnacle Capital Management, and the second at Kora Management L.P.</p>
+
+                <a href="https://masta-g3.github.io/resume.pdf" style="text-align:center"> Download My Resume </a>
+              </div>
+              <div class="col-lg-2">
+              </div>
+              <div class="col-lg-5">
+                  </br>
+                  <!--p class='soon'>COMING SOON</p-->
+                  <div class="tabs">
+                      <ul class="tab-links">
+                          <li class="active"><a href="#skills">&nbsp&nbsp&nbsp&nbsp&nbspSkills&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                          <li><a href="#courses">&nbsp&nbsp&nbsp&nbsp&nbspCourses&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                      </ul>
+
+                      <div class="tab-content">
+                        <br>
+                        <div id="skills" class="tab active">
+                          <p style="font-size:150%" >Skills</p>
+                          <p style="text-align:left"><i class="fa fa-bullseye" aria-hidden="true"></i> Statistical, Machine and Deep Learning <!--progress value="85" max="100"> <div id="progress"></div></progress--> </p>
+                          <p><i class="fa fa-database" aria-hidden="true"></i> AWS, Spark, SQL & Mongo DB</p>
+                          <p><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboards and Data Apps</p>
+                          <p><i class="fa fa-bug" aria-hidden="true"></i> Web Scraping</p>
+                        </div>
+
+                        <div id="courses" class="tab">
+                          <p style="font-size:120%">M.S. in Data Science (Columbia Uni)</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Statistical Inference & Modeling</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> GIS Spatial Analysis</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Exploratory Data Analysis and Visualization</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Algorithms for Data Science</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Natural Language Processing</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Machine Learning</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Computer Systems for Data Science</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
     </section>
