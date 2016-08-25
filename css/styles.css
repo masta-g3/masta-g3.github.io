@@ -1,0 +1,178 @@
+
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway","HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+p {
+  font-size: 1em;
+  text-align: justify;
+}
+
+.img-responsive{
+  margin: 0 auto;
+  display: 100%;
+}
+
+.box{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.soon{
+  font-size: 8em;
+  font-style: italic;
+  text-align: center;
+  color:  #DFDFDF;
+}
+
+/* Tablets */
+@media(max-width:1022px) {
+    body {font-size: 1.3em;}
+    h1 {font-size: 2em;}
+    h3 {font-size: 1.3em;}
+    h4 {font-size: 1.4em;}
+    .tab-links {font-size: 1em;}
+    .soon{font-size: 5em;}
+    .img-responsive {display: none;}
+}
+
+/* Mobiles */
+@media(max-width:480px) {
+    body {font-size: 1.1em;}
+    h1 {font-size: 1.7em;}
+    h3 {font-size: 1.1em;}
+    h4 {font-size: 1.2em;}
+    .soon{font-size: 3em;}
+    .img-responsive {display: none;}
+    .txt-responsive {display: none;}
+    .tab-links {font-size:1em; padding:5px;}
+}
+
+.override {
+text-align: center;
+}
+
+.project {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background: #404040;
+}
+
+.icons {
+	text-decoration: none;
+	color:  #404040;
+	display: inline-block;
+	margin: 10px;
+	border-radius: 16px;
+	position: relative;
+}
+/*Now we will create fish-eye shapes using pseudo elements and clip them to add a curve to the sides of the icons*/
+.icons:before, .icons:after {
+	content: '';
+	position: absolute; left: 0; top: 0;
+	width: 100%; height: 100%;
+	background: inherit;
+	border-radius: 100%; /*circle*/
+	/*time to transform the circle into fish-eye shape. iOS7 style now.*/
+	transform: scaleX(2) scaleY(1.05);
+	/*clipping the left and right sides - 17px from the left and right*/
+	clip: rect(0, 36px, 50px, 17px);
+	/*pushing it behind the icon*/
+	z-index: -1;
+}
+
+#logo {
+  font-size: 1.3em;
+  color: #e1ddcb;
+  position: fixed;
+  position:fixed;
+  right:1em;
+  bottom:1em;
+}
+
+
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.tab-links li {
+    margin:0px 5px 0px 0px;
+    float:left;
+    list-style:none;
+}
+
+.tab-links a {
+    padding:9px;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    background:#eee;
+    font-size:1em;
+    font-weight:600;
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+    background:#E7E7E7;
+    text-decoration:none;
+    color:#428bca;
+}
+
+li.active a, li.active a:hover {
+    background:#a7cce5;
+    color:#4c4c4c;
+    text-decoration: none;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding:15px;
+    border-radius:3px;
+    box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+    background:#eee;
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+}
+
+/*----- Progress Bar -----*/
+#bar {
+    height: 29px; /* Not 30px because the 1px top-border brings it up to 30px to match #graph */
+    width: 20%;
+    background: rgb(255,197,120);
+    background: -moz-linear-gradient(top, rgba(255,197,120,1) 0%, rgba(244,128,38,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,197,120,1)), color-stop(100%,rgba(244,128,38,1)));
+    background: -webkit-linear-gradient(top, rgba(255,197,120,1) 0%,rgba(244,128,38,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,197,120,1) 0%,rgba(244,128,38,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,197,120,1) 0%,rgba(244,128,38,1) 100%);
+    background: linear-gradient(top, rgba(255,197,120,1) 0%,rgba(244,128,38,1) 100%);
+    border-top: 1px solid #fceabb;
+}
+#bar p { position: absolute; text-align: center; width: 100%; margin: 0; line-height: 30px; }
+.error {
+    /* These styles are arbitrary */
+    background-color: #fceabb;
+    padding: 1em;
+    font-weight: bold;
+    color: red;
+    border: 1px solid red;
+}

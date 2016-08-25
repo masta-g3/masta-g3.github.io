@@ -1,91 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Proejcts of all sorts" content="">
+    <meta name="Manuel Rueda" content="">
 
-  <link rel="stylesheet" type="text/css" href="/theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/font-awesome.min.css">
+    <title>Manuel Rueda's Personal Site</title>
 
-    <link href="/static/custom.css" rel="stylesheet">
+    <!--BootstrapCSS-->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Linear Content Atom">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.popup.css" type="text/css">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="" />
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/tabs.js"></script>
 
+    <!-- PopUp Functionallity -->
+    <!--script type="text/javascript">
+      $(function() {
+        $(".js__p_start").simplePopup();
+      });
+    </script>
+    <script type="text/javascript" src="js/jquery.popup.js"></script-->
 
-    <meta name="author" content="Manuel Rueda" />
-    <meta name="description" content="" />
-<meta property="og:site_name" content="Linear Content"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="Linear Content"/>
-<meta property="og:description" content=""/>
-<meta property="og:locale" content="en_US"/>
-<meta property="og:url" content=""/>
-
-  <title>Linear Content</title>
 </head>
-<body>
-  <aside>
-    <div>
-      <a href="">
-        <img src="/theme/img/profile.png" alt="" title="">
-      </a>
-      <h1><a href=""></a></h1>
-      <ul class="social">
-      </ul>
-    </div>
-  </aside>
-  <main>
 
-<article>
-  <header>
-    <h2><a href="/sentiment-bukowski.html#sentiment-bukowski">Bukowski's Poems Sentiment Analysis</a></h2>
-    <p>
-      Posted on Thu 25 August 2016 in <a href="/category/data-science.html">data science</a>
-      &#8226; Tagged with
-      <a href="/tag/python.html">python</a>,      <a href="/tag/nlp.html">nlp</a>,      <a href="/tag/bukowski.html">bukowski</a>    </p>
-  </header>
-  <div>
-      
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Bukowski's-Poems-Sentiment-Analysis">Bukowski's Poems Sentiment Analysis<a class="anchor-link" href="#Bukowski's-Poems-Sentiment-Analysis">¶</a></h1><p>As a byproduct of the neural network project that attempts to write a Bukowski poem, I ended up with this pickle file with a large sample of its poems (1363). I'll use the data to perform basic sentiment analysis on the writings, and see what insights can be extracted from them.</p>
-      <a class="btn" href="/sentiment-bukowski.html#sentiment-bukowski">Continue reading</a>
-  </div>
-</article>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Logo -->
+  <div id="logo"><p>mg3</p></div>
 
-  <div class="pagination">
-  </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#intro">Manuel Rueda</a>
+            </div>
 
-    <footer>
-        <p>&copy; Manuel Rueda </p>
-<p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
-  </main>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#ds">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#apps">Data Apps</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#p5">D3 & P5 JS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#me">More About Me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
+    <!-- Thing for full screen overlay -->
+    <div class="p_body js__p_body js__fadeout"></div>
 
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>Manuel Rueda</h1>
+                    </br>
+                    <p>Hi, I'm <strong>Data Scientist</strong> and <strong>Economist</strong> living in <strong>NY</strong> and studying at <strong>Columbia University</strong>. I work mostly doing web scraping, machine / deep learning models, and building analytical data apps. On this site I host a sample of them. If you would like to connect, colaborate or need help with any data-science related project, please reach me at <a href="manuel.rueda@columbia.edu"> manuel.rueda@columbia.edu</a>.</p>
+                  </br>
+                    <a class="btn btn-default page-scroll" href="#ds">Check my Projects</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="ds" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Data Science Projects</h1>
+                    </br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h4> <a href="https://masta-g3.github.io/nycGentrification/"> Geospatial Analysis of Gentrification on NYC </a> </h4>
+                        <p> A geo-spatial analysis of social and economical variables that have been linked to the process of gentrification on NYC. Done as final project for <i>GIS Spatial Analysis</i> using QGIS, R, d3 and CartoDb. Written report located <a href="https://github.com/masta-g3/nycGentrification/blob/master/GentrificationReport.pdf"> here. </a></p>
+                      </div>
+                      <div class="col-md-6">
+                        <h4> <a href="http://www.woojink.com/moma/"> MoMA Through Time </a> </h4>
+                        <p> Winner of <i>MoMA's Art Datathon</i> event. We utilized the museum's collection data to explore the most exhibited artists and genres through time, revealing interesting patterns on their selection.</p>
+                      </div>
+                    </div>
+                  </br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h4> <a href='https://github.com/masta-g3/summer_networks'> Summer (Neural) Networks '16</a> </h4>
+                        <p> Several small projects and tutorials performed during the summer on Neural Networks and their creative applications. Implementation both on numpy and theano, with the input corpus a set of <a href='https://en.wikipedia.org/wiki/Charles_Bukowski'>Bukowski</a>'s poems.</p>
+                      </div>
+                    <div class="col-md-6">
+                      <h4> <a href="http://woojink.github.io/culpa_sentiment/"> CULPA Sentiment </a> </h4>
+                      <p> Sentiment analysis and visualization of Columbia's academic course ratings. Won prize for best use of the API.</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
 
+    <!-- Data Apps Section -->
+    <section id="apps" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Data Apps</h1>
+                    <br>
+                    <!-- Projects Row -->
+                    <div class="row">
+                        <div class="col-md-4 portfolio-item">
+                          <img class="img-responsive box" src="img/combined1.gif" alt=""/>
+                          </br>
+                          <h4>GeoTracking App</h4>
+                          <p>Built for <a href='http://www.trinnaclefund.com'>Trinnacle Capital Management</a>. Uses mobile geolocation data to fit a linear model based on user parameters and predict companies' revenue. </p>
+                        </div>
+                        <div class="col-md-4 portfolio-item">
+                          <img class="img-responsive box" src="img/combined2.gif" alt=""/>
+                          </br>
+                          <h4>Process Monitor</h4>
+                          <p>Built for <a href='http://www.koracap.com/'>Kora Management LP</a>. Monitors the status of several web-scraping processes running on AWS and provides drill-down details on them (running time, success rate, items collected).</p>
+                        </div>
+                        <div class="col-md-4 portfolio-item">
+                          <img class="img-responsive box" src="http://placehold.it/500x279.png" alt=""/>
+                          </br>
+                          <h4>Twitter Brand Monitor</h4>
+                          <p>Collects tweets related to a company and its products,  performs sentiment analysis on it, and extracts user-ratings for them. The data is presented as time-series with drill-down options. </p>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+        </div>
 
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " Linear Content ",
-  "url" : "",
-  "image": "",
-  "description": ""
-}
-</script>
+        <!-- Modal Boxes -->
+        <!--div class="popup js__popup js__slide_top">
+          <div class="row">
+            </br>
+            <a href="#" class="p_close js__p_close" title="Close"> <i class="fa fa-times fa-2x"></i> </a>
+            <div class="col-md-8 col-md-offset-2">
+              <h4> GeoTracking App </h4>
+              </br>
+              <img class="img-responsive" src="img/combined1.gif" alt="";>
+              <ul>
+                <li>asas</li>
+                <li>asas</li>
+                <li>asas</li>
+              </ul>
+            </div>
+          </div>
+        </div-->
+
+    </section>
+
+      <!-- Visualization Section -->
+    <section id="p5" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>P5 & D3 JS</h1>
+                    </br>
+                    <p class='soon'>COMING SOON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Apps Section -->
+    <section id="me" class="services-section">
+        <div class="container">
+            <div class="row">
+              <h1>More About Me</h1>
+              <div class="col-lg-5">
+                <h4 class="txt-responsive"> Short Bio </h4>
+                <p class="txt-responsive"> I graduated as a B.Sc. in Economics from Monterrey Tech (ITESM) and worked at MSCI as a quantitative data analyst for 5 years, where I helped build and manage the Market Data team. After flirting with R, Python and big data visualization tools, I decided to purse graduate studies on the subject. Right now I'm going over the third (and last) semester of the M.S. in Data Science Program at Columbia, and have developed practical experience during my 2 internships projects here in NY: the first at Trinnacle Capital Management, and the second at Kora Management L.P.</p>
+
+                <a href="https://masta-g3.github.io/resume.pdf" style="text-align:center"> Download My Resume </a>
+              </div>
+              <div class="col-lg-2">
+              </div>
+              <div class="col-lg-5">
+                  </br>
+                  <!--p class='soon'>COMING SOON</p-->
+                  <div class="tabs">
+                      <ul class="tab-links">
+                          <li class="active"><a href="#skills">&nbsp&nbsp&nbsp&nbsp&nbspSkills&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                          <li><a href="#courses">&nbsp&nbsp&nbsp&nbsp&nbspCourses&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                      </ul>
+
+                      <div class="tab-content">
+                        <br>
+                        <div id="skills" class="tab active">
+                          <p style="font-size:150%" >Skills</p>
+                          <p style="text-align:left"><i class="fa fa-bullseye" aria-hidden="true"></i> Statistical, Machine and Deep Learning <!--progress value="85" max="100"> <div id="progress"></div></progress--> </p>
+                          <p><i class="fa fa-database" aria-hidden="true"></i> AWS, Spark, SQL & Mongo DB</p>
+                          <p><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboards and Data Apps</p>
+                          <p><i class="fa fa-bug" aria-hidden="true"></i> Web Scraping</p>
+                        </div>
+
+                        <div id="courses" class="tab">
+                          <p style="font-size:120%">M.S. in Data Science (Columbia Uni)</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Statistical Inference & Modeling</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> GIS Spatial Analysis</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Exploratory Data Analysis and Visualization</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Algorithms for Data Science</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Natural Language Processing</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Machine Learning</p>
+                          <p><i class="fa fa-book" aria-hidden="true"></i> Computer Systems for Data Science</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Me</h1>
+                    </br>
+                    <p class="override"> Asides from e-mail, you can contact me on the following networks.</p>
+                    </br>
+                    <p class="override"><a href="manuel.rueda@columbia.edu"> <i class="fa fa-envelope-square fa-5x"> </i> </a>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                      <a href="https://www.linkedin.com/in/manuelrueda87"> <i class="fa fa-linkedin-square fa-5x"> </i> </a>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                      <a href="https://github.com/masta-g3"> <i class="fa fa-github-square fa-5x"></i> </a>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                      <a href="https://www.instagram.com/masta_g3"> <i class="fa fa-instagram fa-5x"></i> </a>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                      <a href="https://twitter.com/masta_g3"> <i class="fa fa-twitter-square fa-5x"> </i> </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
